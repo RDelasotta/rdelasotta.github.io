@@ -1,0 +1,1132 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  >
+
+  <title>Rodrigo de la Sotta | Consultor curricular senior</title>
+
+  <meta
+    name="description"
+    content="Portafolio profesional de Rodrigo de la Sotta, consultor curricular senior especializado en diseño instruccional, innovación educativa, aseguramiento de la calidad e inteligencia artificial aplicada al aprendizaje."
+  >
+
+  <style>
+    :root {
+      --azul-oscuro: #18344d;
+      --azul: #1769a7;
+      --turquesa: #178e87;
+      --fondo: #f5f7f9;
+      --blanco: #ffffff;
+      --texto: #243443;
+      --texto-secundario: #536272;
+      --borde: #dce4ea;
+      --sombra: 0 12px 30px rgba(24, 52, 77, 0.10);
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html {
+      scroll-behavior: smooth;
+      scroll-padding-top: 80px;
+    }
+
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      color: var(--texto);
+      background-color: var(--fondo);
+      line-height: 1.65;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    img {
+      display: block;
+      max-width: 100%;
+    }
+
+    .contenedor {
+      width: min(1180px, calc(100% - 48px));
+      margin: 0 auto;
+    }
+
+    /* NAVEGACIÓN */
+
+    header {
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      color: var(--blanco);
+      background: var(--azul-oscuro);
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.12);
+    }
+
+    .navegacion {
+      display: flex;
+      min-height: 66px;
+      align-items: center;
+      justify-content: space-between;
+      gap: 30px;
+    }
+
+    .marca {
+      font-size: 1.25rem;
+      font-weight: 700;
+      white-space: nowrap;
+    }
+
+    .menu {
+      display: flex;
+      align-items: center;
+      gap: 30px;
+      list-style: none;
+    }
+
+    .menu a {
+      font-weight: 600;
+      transition: opacity 0.2s ease;
+    }
+
+    .menu a:hover,
+    .menu a:focus {
+      opacity: 0.75;
+    }
+
+    .menu .enlace-cv {
+      padding: 9px 16px;
+      border: 1px solid rgba(255, 255, 255, 0.7);
+      border-radius: 9px;
+    }
+
+    /* PRESENTACIÓN PRINCIPAL */
+
+    .hero {
+      padding: 105px 0 90px;
+      color: var(--blanco);
+      background: linear-gradient(
+        120deg,
+        #123c5d 0%,
+        #1768a5 60%,
+        #168d86 100%
+      );
+    }
+
+    .hero-grid {
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) 355px;
+      align-items: center;
+      gap: 70px;
+    }
+
+    .etiqueta {
+      display: inline-block;
+      margin-bottom: 22px;
+      padding: 8px 17px;
+      border: 1px solid rgba(255, 255, 255, 0.45);
+      border-radius: 999px;
+      font-size: 1rem;
+      font-weight: 700;
+    }
+
+    h1 {
+      margin-bottom: 18px;
+      font-size: clamp(3rem, 6vw, 5.2rem);
+      line-height: 1.04;
+      letter-spacing: -2px;
+    }
+
+    .subtitulo {
+      max-width: 920px;
+      margin-bottom: 28px;
+      color: #edf7fb;
+      font-size: clamp(1.35rem, 2.3vw, 2rem);
+      line-height: 1.45;
+    }
+
+    .resumen-hero {
+      max-width: 900px;
+      margin-bottom: 32px;
+      font-size: 1.12rem;
+      line-height: 1.75;
+    }
+
+    .acciones {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 14px;
+    }
+
+    .boton {
+      display: inline-flex;
+      min-height: 52px;
+      align-items: center;
+      justify-content: center;
+      padding: 12px 25px;
+      border: 1px solid var(--blanco);
+      border-radius: 9px;
+      font-size: 1rem;
+      font-weight: 700;
+      transition:
+        transform 0.2s ease,
+        background-color 0.2s ease,
+        color 0.2s ease;
+    }
+
+    .boton:hover,
+    .boton:focus {
+      transform: translateY(-2px);
+    }
+
+    .boton-principal {
+      color: var(--azul-oscuro);
+      background: var(--blanco);
+    }
+
+    .boton-secundario {
+      color: var(--blanco);
+      background: transparent;
+    }
+
+    .foto-profesional {
+      width: 355px;
+      aspect-ratio: 4 / 5;
+      object-fit: cover;
+      object-position: center top;
+      border: 6px solid rgba(255, 255, 255, 0.9);
+      border-radius: 24px;
+      box-shadow: 0 20px 45px rgba(0, 0, 0, 0.22);
+    }
+
+    /* SECCIONES GENERALES */
+
+    section {
+      padding: 82px 0;
+    }
+
+    .seccion-blanca {
+      background: var(--blanco);
+    }
+
+    .encabezado-seccion {
+      max-width: 820px;
+      margin-bottom: 42px;
+    }
+
+    .encabezado-seccion span {
+      display: block;
+      margin-bottom: 8px;
+      color: var(--azul);
+      font-size: 0.9rem;
+      font-weight: 700;
+      letter-spacing: 1.5px;
+      text-transform: uppercase;
+    }
+
+    h2 {
+      margin-bottom: 16px;
+      color: var(--azul-oscuro);
+      font-size: clamp(2rem, 4vw, 3rem);
+      line-height: 1.2;
+    }
+
+    .encabezado-seccion p {
+      color: var(--texto-secundario);
+      font-size: 1.1rem;
+    }
+
+    /* PERFIL */
+
+    .perfil-grid {
+      display: grid;
+      grid-template-columns: 1.4fr 0.8fr;
+      align-items: start;
+      gap: 60px;
+    }
+
+    .perfil-texto p {
+      margin-bottom: 18px;
+      text-align: justify;
+    }
+
+    .datos-destacados {
+      display: grid;
+      gap: 16px;
+    }
+
+    .dato {
+      padding: 24px;
+      border-left: 5px solid var(--turquesa);
+      border-radius: 10px;
+      background: #eef5f7;
+    }
+
+    .dato strong {
+      display: block;
+      margin-bottom: 5px;
+      color: var(--azul-oscuro);
+      font-size: 1.15rem;
+    }
+
+    /* TARJETAS */
+
+    .grilla {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 22px;
+    }
+
+    .tarjeta {
+      height: 100%;
+      padding: 28px;
+      border: 1px solid var(--borde);
+      border-radius: 15px;
+      background: var(--blanco);
+      box-shadow: var(--sombra);
+    }
+
+    .tarjeta h3 {
+      margin-bottom: 12px;
+      color: var(--azul-oscuro);
+      font-size: 1.2rem;
+      line-height: 1.35;
+    }
+
+    .tarjeta p {
+      color: var(--texto-secundario);
+    }
+
+    .numero {
+      display: flex;
+      width: 43px;
+      height: 43px;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 19px;
+      border-radius: 50%;
+      color: var(--blanco);
+      background: linear-gradient(135deg, var(--azul), var(--turquesa));
+      font-weight: 700;
+    }
+
+    /* PROYECTOS */
+
+    .proyecto {
+      position: relative;
+      overflow: hidden;
+    }
+
+    .proyecto::before {
+      position: absolute;
+      inset: 0 auto 0 0;
+      width: 5px;
+      content: "";
+      background: linear-gradient(var(--azul), var(--turquesa));
+    }
+
+    .proyecto .categoria {
+      display: inline-block;
+      margin-bottom: 14px;
+      color: var(--azul);
+      font-size: 0.82rem;
+      font-weight: 700;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+    }
+
+    .proyecto h3 {
+      margin-bottom: 18px;
+    }
+
+    .proyecto-detalle {
+      display: grid;
+      gap: 14px;
+    }
+
+    .proyecto-detalle p {
+      padding-top: 12px;
+      border-top: 1px solid var(--borde);
+    }
+
+    .proyecto-detalle strong {
+      display: block;
+      margin-bottom: 3px;
+      color: var(--azul-oscuro);
+      font-size: 0.9rem;
+    }
+
+    .proyecto-aporte {
+      margin-top: 18px;
+      padding: 13px 15px;
+      border-radius: 9px;
+      color: var(--azul-oscuro);
+      background: #eef5f7;
+      font-size: 0.93rem;
+      font-weight: 600;
+    }
+
+    /* COMPETENCIAS */
+
+    .competencias {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+
+    .competencia {
+      padding: 10px 16px;
+      border: 1px solid #cbd9e2;
+      border-radius: 999px;
+      color: var(--azul-oscuro);
+      background: var(--blanco);
+      font-weight: 600;
+    }
+
+    /* CONTACTO */
+
+    .contacto {
+      color: var(--blanco);
+      background: var(--azul-oscuro);
+    }
+
+    .contacto h2,
+    .contacto .encabezado-seccion span {
+      color: var(--blanco);
+    }
+
+    .contacto .encabezado-seccion p {
+      color: #d7e4ec;
+    }
+
+    .contacto-grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 20px;
+    }
+
+    .contacto-tarjeta {
+      display: flex;
+      min-height: 150px;
+      flex-direction: column;
+      justify-content: center;
+      padding: 25px;
+      border: 1px solid rgba(255, 255, 255, 0.25);
+      border-radius: 14px;
+      background: rgba(255, 255, 255, 0.06);
+      transition:
+        transform 0.2s ease,
+        background-color 0.2s ease;
+    }
+
+    .contacto-tarjeta:hover,
+    .contacto-tarjeta:focus {
+      transform: translateY(-3px);
+      background: rgba(255, 255, 255, 0.12);
+    }
+
+    .contacto-tarjeta strong {
+      margin-bottom: 8px;
+      font-size: 1.15rem;
+    }
+
+    .contacto-tarjeta span {
+      color: #d7e4ec;
+      overflow-wrap: anywhere;
+    }
+
+    footer {
+      padding: 25px 0;
+      color: #cbd7df;
+      background: #10283b;
+      text-align: center;
+      font-size: 0.92rem;
+    }
+
+    /* DISEÑO RESPONSIVO */
+
+    @media (max-width: 950px) {
+      .hero-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .foto-profesional {
+        width: min(355px, 100%);
+        grid-row: 1;
+      }
+
+      .perfil-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .grilla,
+      .contacto-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
+    }
+
+    @media (max-width: 720px) {
+      .contenedor {
+        width: min(100% - 30px, 1180px);
+      }
+
+      .navegacion {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 16px 0;
+      }
+
+      .menu {
+        width: 100%;
+        flex-wrap: wrap;
+        gap: 15px;
+      }
+
+      .hero {
+        padding: 65px 0;
+      }
+
+      h1 {
+        font-size: 3rem;
+        letter-spacing: -1px;
+      }
+
+      section {
+        padding: 62px 0;
+      }
+
+      .grilla,
+      .contacto-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .acciones {
+        flex-direction: column;
+      }
+
+      .boton {
+        width: 100%;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <div class="contenedor navegacion">
+
+      <a class="marca" href="#inicio">
+        Rodrigo de la Sotta
+      </a>
+
+      <nav aria-label="Navegación principal">
+        <ul class="menu">
+          <li>
+            <a href="#perfil">Perfil</a>
+          </li>
+
+          <li>
+            <a href="#especialidades">Especialidades</a>
+          </li>
+
+          <li>
+            <a href="#proyectos">Proyectos</a>
+          </li>
+
+          <li>
+            <a href="#contacto">Contacto</a>
+          </li>
+
+          <li>
+            <a
+              class="enlace-cv"
+              href="CV-Rodrigo-de-la-Sotta.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              CV
+            </a>
+          </li>
+        </ul>
+      </nav>
+
+    </div>
+  </header>
+
+  <main>
+
+    <section class="hero" id="inicio">
+      <div class="contenedor hero-grid">
+
+        <div>
+          <span class="etiqueta">
+            Portafolio profesional
+          </span>
+
+          <h1>Rodrigo de la Sotta</h1>
+
+          <p class="subtitulo">
+            Consultor curricular senior · Diseño instruccional · Innovación
+            educativa · Inteligencia artificial aplicada al aprendizaje
+          </p>
+
+          <p class="resumen-hero">
+            <strong>Más de 18 años de experiencia</strong> en educación
+            superior, formación técnico-profesional, capacitación laboral y
+            desarrollo de soluciones formativas para universidades, institutos
+            profesionales, centros de formación técnica, OTEC y organizaciones.
+          </p>
+
+          <div class="acciones">
+
+            <a
+              class="boton boton-principal"
+              href="#proyectos"
+            >
+              Ver proyectos
+            </a>
+
+            <a
+              class="boton boton-secundario"
+              href="#contacto"
+            >
+              Contactar
+            </a>
+
+            <a
+              class="boton boton-secundario"
+              href="CV-Rodrigo-de-la-Sotta.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Descargar CV
+            </a>
+
+          </div>
+        </div>
+
+        <div>
+          <img
+            class="foto-profesional"
+            src="foto-rodrigo.png"
+            alt="Fotografía profesional de Rodrigo de la Sotta"
+          >
+        </div>
+
+      </div>
+    </section>
+
+    <section class="seccion-blanca" id="perfil">
+      <div class="contenedor">
+
+        <div class="encabezado-seccion">
+          <span>Perfil profesional</span>
+
+          <h2>
+            Experiencia al servicio de la calidad y la innovación educativa
+          </h2>
+        </div>
+
+        <div class="perfil-grid">
+
+          <div class="perfil-texto">
+
+            <p>
+              Consultor curricular senior, diseñador instruccional y relator,
+              con experiencia en diseño, actualización, implementación y
+              evaluación de programas formativos en educación superior,
+              formación técnico-profesional, postgrado y capacitación laboral.
+            </p>
+
+            <p>
+              Mi trayectoria comprende la coordinación académica y curricular,
+              el acompañamiento a docentes y especialistas, la elaboración de
+              perfiles de egreso, competencias, resultados de aprendizaje,
+              planes de estudio, matrices de tributación, instrumentos de
+              evaluación y sistemas de seguimiento para la mejora continua.
+            </p>
+
+            <p>
+              Integro enfoques de formación por competencias, planificación
+              inversa, Diseño Universal para el Aprendizaje, evaluación para el
+              aprendizaje, aseguramiento de la calidad e inteligencia artificial
+              generativa aplicada responsablemente a la educación y la
+              productividad.
+            </p>
+
+          </div>
+
+          <div class="datos-destacados">
+
+            <div class="dato">
+              <strong>18+ años</strong>
+              <span>
+                de experiencia profesional en educación y formación.
+              </span>
+            </div>
+
+            <div class="dato">
+              <strong>Experiencia multisectorial</strong>
+              <span>
+                Universidades, institutos profesionales, CFT, OTEC y
+                organizaciones.
+              </span>
+            </div>
+
+            <div class="dato">
+              <strong>Modalidades flexibles</strong>
+              <span>
+                Trabajo presencial, híbrido y remoto.
+              </span>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <section id="especialidades">
+      <div class="contenedor">
+
+        <div class="encabezado-seccion">
+          <span>Especialidades</span>
+
+          <h2>
+            Ámbitos de experiencia profesional
+          </h2>
+
+          <p>
+            Soluciones orientadas a mejorar la pertinencia, coherencia y
+            calidad de los procesos formativos.
+          </p>
+        </div>
+
+        <div class="grilla">
+
+          <article class="tarjeta">
+            <div class="numero">01</div>
+
+            <h3>Diseño y gestión curricular</h3>
+
+            <p>
+              Diseño, actualización y rediseño de programas, perfiles de
+              egreso, competencias, resultados de aprendizaje, planes de
+              estudio y matrices curriculares.
+            </p>
+          </article>
+
+          <article class="tarjeta">
+            <div class="numero">02</div>
+
+            <h3>Diseño instruccional</h3>
+
+            <p>
+              Desarrollo de experiencias, recursos, actividades y evaluaciones
+              para modalidades presenciales, híbridas y virtuales.
+            </p>
+          </article>
+
+          <article class="tarjeta">
+            <div class="numero">03</div>
+
+            <h3>Aseguramiento de la calidad</h3>
+
+            <p>
+              Revisión de coherencia curricular y normativa, elaboración de
+              estándares, instrumentos de seguimiento e indicadores de mejora.
+            </p>
+          </article>
+
+          <article class="tarjeta">
+            <div class="numero">04</div>
+
+            <h3>Aprendizaje y desarrollo</h3>
+
+            <p>
+              Diseño y coordinación de programas de formación, capacitación,
+              acompañamiento docente y desarrollo de capacidades
+              profesionales.
+            </p>
+          </article>
+
+          <article class="tarjeta">
+            <div class="numero">05</div>
+
+            <h3>Innovación educativa</h3>
+
+            <p>
+              Incorporación de metodologías activas, evaluación auténtica,
+              tecnologías educativas y Diseño Universal para el Aprendizaje.
+            </p>
+          </article>
+
+          <article class="tarjeta">
+            <div class="numero">06</div>
+
+            <h3>IA aplicada al aprendizaje</h3>
+
+            <p>
+              Formación y asesoría sobre inteligencia artificial generativa,
+              prompting, productividad, integridad académica y uso
+              responsable.
+            </p>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <section class="seccion-blanca" id="proyectos">
+      <div class="contenedor">
+
+        <div class="encabezado-seccion">
+          <span>Proyectos seleccionados</span>
+
+          <h2>
+            Experiencias y soluciones desarrolladas
+          </h2>
+
+          <p>
+            Casos representativos de mi trayectoria, presentados mediante el
+            desafío abordado, la intervención desarrollada y el valor aportado.
+          </p>
+        </div>
+
+        <div class="grilla">
+
+          <article class="tarjeta proyecto">
+            <span class="categoria">
+              Educación superior
+            </span>
+
+            <h3>
+              Fortalecimiento curricular de programas de postgrado
+            </h3>
+
+            <div class="proyecto-detalle">
+              <p>
+                <strong>Desafío</strong>
+                Alinear programas de magíster con la normativa institucional,
+                los criterios de calidad y las necesidades de actualización
+                disciplinar y profesional.
+              </p>
+
+              <p>
+                <strong>Intervención</strong>
+                Revisión de lineamientos y manuales operativos; análisis de
+                perfiles de graduación, competencias, resultados de
+                aprendizaje, SCT, evaluación y matrices de tributación.
+              </p>
+            </div>
+
+            <div class="proyecto-aporte">
+              Aporte: mayor coherencia curricular, trazabilidad documental y
+              preparación para procesos de mejora y aseguramiento de la calidad.
+            </div>
+          </article>
+
+          <article class="tarjeta proyecto">
+            <span class="categoria">
+              Industria y minería
+            </span>
+
+            <h3>
+              Formación para la industria y minería 4.0
+            </h3>
+
+            <div class="proyecto-detalle">
+              <p>
+                <strong>Desafío</strong>
+                Traducir requerimientos operacionales y tecnológicos del sector
+                industrial y minero en programas de entrenamiento pertinentes.
+              </p>
+
+              <p>
+                <strong>Intervención</strong>
+                Liderazgo curricular, coordinación de especialistas y diseño de
+                planes formativos basados en competencias, desempeño y
+                aprendizaje aplicado.
+              </p>
+            </div>
+
+            <div class="proyecto-aporte">
+              Aporte: articulación entre necesidades productivas, capacidades
+              laborales y experiencias de formación orientadas al desempeño.
+            </div>
+          </article>
+
+          <article class="tarjeta proyecto">
+            <span class="categoria">
+              Gestión curricular
+            </span>
+
+            <h3>
+              Sistemas e instrumentos de gestión académica
+            </h3>
+
+            <div class="proyecto-detalle">
+              <p>
+                <strong>Desafío</strong>
+                Estandarizar procesos de creación, ajuste, rediseño,
+                implementación y seguimiento de programas formativos.
+              </p>
+
+              <p>
+                <strong>Intervención</strong>
+                Desarrollo de matrices, listas de verificación, flujos de
+                proceso, formularios asistidos e instrumentos de seguimiento
+                curricular.
+              </p>
+            </div>
+
+            <div class="proyecto-aporte">
+              Aporte: decisiones mejor fundamentadas, procesos comparables y
+              mayor consistencia de la documentación académica.
+            </div>
+          </article>
+
+          <article class="tarjeta proyecto">
+            <span class="categoria">
+              Desarrollo docente
+            </span>
+
+            <h3>
+              Fortalecimiento de capacidades académicas
+            </h3>
+
+            <div class="proyecto-detalle">
+              <p>
+                <strong>Desafío</strong>
+                Fortalecer las capacidades de docentes y equipos académicos
+                para implementar innovaciones curriculares y pedagógicas.
+              </p>
+
+              <p>
+                <strong>Intervención</strong>
+                Diseño y facilitación de talleres, asesorías y acompañamiento en
+                resultados de aprendizaje, metodologías activas, evaluación,
+                DUA e integridad académica.
+              </p>
+            </div>
+
+            <div class="proyecto-aporte">
+              Aporte: herramientas transferibles a la práctica y criterios
+              compartidos para mejorar la experiencia de aprendizaje.
+            </div>
+          </article>
+
+          <article class="tarjeta proyecto">
+            <span class="categoria">
+              Aprendizaje digital
+            </span>
+
+            <h3>
+              Programas y recursos para formación online
+            </h3>
+
+            <div class="proyecto-detalle">
+              <p>
+                <strong>Desafío</strong>
+                Transformar contenidos especializados en experiencias online
+                claras, activas, accesibles y evaluables.
+              </p>
+
+              <p>
+                <strong>Intervención</strong>
+                Co-construcción con expertos, organización de contenidos y
+                diseño de secuencias, actividades, evaluaciones, guías y
+                recursos digitales para LMS.
+              </p>
+            </div>
+
+            <div class="proyecto-aporte">
+              Aporte: alineación entre competencias, actividades y evaluación,
+              con una experiencia formativa consistente en entornos digitales.
+            </div>
+          </article>
+
+          <article class="tarjeta proyecto">
+            <span class="categoria">
+              Inteligencia artificial
+            </span>
+
+            <h3>
+              IA generativa para educación y productividad
+            </h3>
+
+            <div class="proyecto-detalle">
+              <p>
+                <strong>Desafío</strong>
+                Incorporar inteligencia artificial generativa con propósito,
+                criterios pedagógicos y resguardos éticos en contextos reales.
+              </p>
+
+              <p>
+                <strong>Intervención</strong>
+                Diseño de talleres y recursos sobre prompting, productividad,
+                automatización asistida, evaluación, integridad académica y uso
+                responsable de herramientas de IA.
+              </p>
+            </div>
+
+            <div class="proyecto-aporte">
+              Aporte: adopción práctica y responsable de IA, vinculada con
+              necesidades de aprendizaje, trabajo e innovación.
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="contenedor">
+
+        <div class="encabezado-seccion">
+          <span>Competencias</span>
+
+          <h2>
+            Conocimientos y capacidades clave
+          </h2>
+        </div>
+
+        <div class="competencias">
+
+          <span class="competencia">
+            Currículum por competencias
+          </span>
+
+          <span class="competencia">
+            Resultados de aprendizaje
+          </span>
+
+          <span class="competencia">
+            Diseño instruccional
+          </span>
+
+          <span class="competencia">
+            Evaluación del aprendizaje
+          </span>
+
+          <span class="competencia">
+            Aseguramiento de la calidad
+          </span>
+
+          <span class="competencia">
+            Gestión de proyectos
+          </span>
+
+          <span class="competencia">
+            Formación docente
+          </span>
+
+          <span class="competencia">
+            Educación superior
+          </span>
+
+          <span class="competencia">
+            Learning &amp; Development
+          </span>
+
+          <span class="competencia">
+            Diseño Universal para el Aprendizaje
+          </span>
+
+          <span class="competencia">
+            Inteligencia artificial generativa
+          </span>
+
+          <span class="competencia">
+            Integridad académica
+          </span>
+
+          <span class="competencia">
+            Mejora continua
+          </span>
+
+        </div>
+      </div>
+    </section>
+
+    <section class="contacto" id="contacto">
+      <div class="contenedor">
+
+        <div class="encabezado-seccion">
+          <span>Contacto</span>
+
+          <h2>
+            Conversemos sobre oportunidades y proyectos
+          </h2>
+
+          <p>
+            Disponible para consultorías, proyectos curriculares, diseño
+            instruccional, formación, innovación educativa e inteligencia
+            artificial aplicada.
+          </p>
+        </div>
+
+        <div class="contacto-grid">
+
+          <a
+            class="contacto-tarjeta"
+            href="mailto:rodrigodelasotta@gmail.com"
+          >
+            <strong>Correo electrónico</strong>
+
+            <span>
+              rodrigodelasotta@gmail.com
+            </span>
+          </a>
+
+          <a
+            class="contacto-tarjeta"
+            href="https://www.linkedin.com/in/rodelasotta/"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Visitar el perfil de LinkedIn de Rodrigo de la Sotta"
+          >
+            <strong>LinkedIn</strong>
+
+            <span>
+              Ver perfil profesional
+            </span>
+          </a>
+
+          <a
+            class="contacto-tarjeta"
+            href="CV-Rodrigo-de-la-Sotta.pdf"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <strong>Currículum</strong>
+
+            <span>
+              Ver o descargar CV en PDF
+            </span>
+          </a>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    <div class="contenedor">
+      © 2026 Rodrigo de la Sotta · Portafolio profesional
+    </div>
+  </footer>
+
+</body>
+</html>
