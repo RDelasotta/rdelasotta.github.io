@@ -6,7 +6,9 @@
 
   <title>Rodrigo de la Sotta | Consultor Curricular Senior</title>
 
-  <meta name="description" content="Portafolio profesional de Rodrigo de la Sotta, consultor senior en diseño curricular, innovación educativa, aseguramiento de la calidad, diseño instruccional e inteligencia artificial aplicada al aprendizaje.">
+  <meta
+    name="description"
+    content="Portafolio profesional de Rodrigo de la Sotta, consultor senior en diseño curricular, innovación educativa, aseguramiento de la calidad, diseño instruccional e inteligencia artificial aplicada al aprendizaje.">
 
   <style>
     :root {
@@ -37,24 +39,25 @@
       position: sticky;
       top: 0;
       z-index: 100;
-      background: rgba(16, 42, 67, 0.97);
-      padding: 14px 7%;
       display: flex;
       justify-content: space-between;
       align-items: center;
+      padding: 14px 7%;
+      background: rgba(16, 42, 67, 0.97);
+      box-shadow: 0 3px 12px rgba(0, 0, 0, 0.12);
     }
 
     nav .marca {
       color: var(--blanco);
-      font-weight: bold;
       font-size: 1.05rem;
+      font-weight: bold;
     }
 
     nav .enlaces a {
-      color: var(--blanco);
-      text-decoration: none;
       margin-left: 22px;
+      color: var(--blanco);
       font-size: 0.92rem;
+      text-decoration: none;
     }
 
     nav .enlaces a:hover {
@@ -63,22 +66,46 @@
 
     header {
       min-height: 78vh;
-      padding: 90px 8%;
       display: flex;
       align-items: center;
-      background: linear-gradient(135deg, #102a43 0%, #1769aa 70%, #1f8a70 100%);
+      padding: 85px 8%;
       color: var(--blanco);
+      background:
+        linear-gradient(
+          135deg,
+          #102a43 0%,
+          #1769aa 70%,
+          #1f8a70 100%
+        );
     }
 
     .hero {
-      max-width: 950px;
+      position: relative;
+      width: 100%;
+      max-width: 1180px;
+      margin: 0 auto;
+      padding-right: 360px;
+    }
+
+    .foto-perfil {
+      position: absolute;
+      top: 50%;
+      right: 0;
+      width: 285px;
+      height: 355px;
+      object-fit: cover;
+      object-position: center top;
+      border: 5px solid rgba(255, 255, 255, 0.88);
+      border-radius: 18px;
+      box-shadow: 0 18px 45px rgba(0, 0, 0, 0.28);
+      transform: translateY(-50%);
     }
 
     .etiqueta {
       display: inline-block;
-      padding: 7px 14px;
       margin-bottom: 18px;
-      border: 1px solid rgba(255,255,255,0.45);
+      padding: 7px 14px;
+      border: 1px solid rgba(255, 255, 255, 0.45);
       border-radius: 20px;
       font-size: 0.88rem;
       letter-spacing: 0.4px;
@@ -92,21 +119,23 @@
 
     header h2 {
       margin: 0 0 22px;
+      color: #d9effc;
       font-size: clamp(1.15rem, 2.5vw, 1.65rem);
       font-weight: normal;
-      color: #d9effc;
+      line-height: 1.45;
     }
 
     header p {
       max-width: 800px;
+      margin-bottom: 0;
       font-size: 1.08rem;
     }
 
     .botones {
-      margin-top: 30px;
       display: flex;
       flex-wrap: wrap;
       gap: 12px;
+      margin-top: 30px;
     }
 
     .boton {
@@ -156,8 +185,8 @@
 
     .presentacion {
       max-width: 940px;
-      font-size: 1.08rem;
       color: var(--gris-texto);
+      font-size: 1.08rem;
     }
 
     .grid {
@@ -172,6 +201,12 @@
       border: 1px solid var(--borde);
       border-radius: 12px;
       box-shadow: 0 8px 22px rgba(16, 42, 67, 0.06);
+      transition: transform 0.2s, box-shadow 0.2s;
+    }
+
+    .tarjeta:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 12px 28px rgba(16, 42, 67, 0.11);
     }
 
     .tarjeta h3 {
@@ -197,6 +232,20 @@
       letter-spacing: 0.6px;
     }
 
+    .competencias {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+
+    .competencias span {
+      padding: 9px 14px;
+      color: var(--azul-oscuro);
+      background: var(--azul-claro);
+      border-radius: 22px;
+      font-size: 0.9rem;
+    }
+
     .destacado {
       padding: 65px 7%;
       color: var(--blanco);
@@ -214,30 +263,31 @@
       color: #d9e2ec;
     }
 
-    .competencias {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 10px;
-    }
-
-    .competencias span {
-      padding: 9px 14px;
-      background: var(--azul-claro);
-      color: var(--azul-oscuro);
-      border-radius: 22px;
-      font-size: 0.9rem;
-    }
-
     footer {
       padding: 35px 20px;
-      background: #0b1f33;
       color: #cbd5e0;
+      background: #0b1f33;
       text-align: center;
       font-size: 0.9rem;
     }
 
     footer a {
       color: #9ed7f5;
+    }
+
+    @media (max-width: 900px) {
+      header {
+        padding: 70px 7%;
+      }
+
+      .hero {
+        padding-right: 290px;
+      }
+
+      .foto-perfil {
+        width: 235px;
+        height: 295px;
+      }
     }
 
     @media (max-width: 760px) {
@@ -251,11 +301,47 @@
 
       header {
         min-height: auto;
-        padding: 75px 7%;
+        padding: 60px 7%;
+      }
+
+      .hero {
+        padding-right: 0;
+        text-align: center;
+      }
+
+      .foto-perfil {
+        position: relative;
+        top: auto;
+        right: auto;
+        display: block;
+        width: 190px;
+        height: 235px;
+        margin: 0 auto 30px;
+        transform: none;
+      }
+
+      h1 {
+        font-size: 2.7rem;
+      }
+
+      header h2 {
+        font-size: 1.18rem;
+      }
+
+      header p {
+        font-size: 1rem;
+      }
+
+      .botones {
+        justify-content: center;
       }
 
       section {
         padding: 55px 20px;
+      }
+
+      section h2 {
+        font-size: 1.75rem;
       }
     }
   </style>
@@ -276,12 +362,19 @@
 
   <header>
     <div class="hero">
+
+      <img
+        class="foto-perfil"
+        src="foto-rodrigo.png"
+        alt="Fotografía profesional de Rodrigo de la Sotta">
+
       <span class="etiqueta">Portafolio profesional</span>
 
       <h1>Rodrigo de la Sotta</h1>
 
       <h2>
-        Consultor curricular senior · Diseño instruccional · Innovación educativa · Inteligencia artificial aplicada al aprendizaje
+        Consultor curricular senior · Diseño instruccional ·
+        Innovación educativa · Inteligencia artificial aplicada al aprendizaje
       </h2>
 
       <p>
@@ -292,8 +385,13 @@
       </p>
 
       <div class="botones">
-        <a class="boton principal" href="#proyectos">Ver proyectos</a>
-        <a class="boton secundario" href="#contacto">Contactar</a>
+        <a class="boton principal" href="#proyectos">
+          Ver proyectos
+        </a>
+
+        <a class="boton secundario" href="#contacto">
+          Contactar
+        </a>
       </div>
     </div>
   </header>
@@ -330,6 +428,7 @@
       <div class="linea"></div>
 
       <div class="grid">
+
         <article class="tarjeta">
           <h3>Diseño curricular</h3>
           <p>
@@ -379,6 +478,7 @@
             responsable de herramientas digitales.
           </p>
         </article>
+
       </div>
     </section>
 
@@ -387,6 +487,7 @@
       <div class="linea"></div>
 
       <div class="grid">
+
         <article class="tarjeta proyecto">
           <span class="tipo">Consultoría curricular de postgrado</span>
           <h3>Fortalecimiento de programas de magíster</h3>
@@ -448,6 +549,7 @@
             educativo e integridad académica.
           </p>
         </article>
+
       </div>
     </section>
 
@@ -464,7 +566,7 @@
         <span>Gestión de proyectos formativos</span>
         <span>Formación docente</span>
         <span>Educación superior</span>
-        <span>Learning & Development</span>
+        <span>Learning &amp; Development</span>
         <span>Diseño Universal para el Aprendizaje</span>
         <span>Inteligencia artificial generativa</span>
         <span>Integridad académica</span>
@@ -483,17 +585,22 @@
       inteligencia artificial aplicada.
     </p>
 
-    <div class="botones" style="justify-content:center;">
-      <a class="boton principal" href="mailto:rodrigodelasotta@gmail.com">
+    <div class="botones" style="justify-content: center;">
+
+      <a
+        class="boton principal"
+        href="mailto:rodrigodelasotta@gmail.com">
         Enviar correo
       </a>
 
-      <a class="boton secundario"
-         href="https://www.linkedin.com/in/rdelasotta/"
-         target="_blank"
-         rel="noopener noreferrer">
+      <a
+        class="boton secundario"
+        href="https://www.linkedin.com/in/rdelasotta/"
+        target="_blank"
+        rel="noopener noreferrer">
         Ver LinkedIn
       </a>
+
     </div>
   </section>
 
