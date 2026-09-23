@@ -53,6 +53,11 @@
       font-weight: bold;
     }
 
+    nav .enlaces {
+      display: flex;
+      align-items: center;
+    }
+
     nav .enlaces a {
       margin-left: 22px;
       color: var(--blanco);
@@ -62,6 +67,12 @@
 
     nav .enlaces a:hover {
       color: #9ed7f5;
+    }
+
+    nav .enlaces .enlace-cv {
+      padding: 6px 12px;
+      border: 1px solid rgba(255, 255, 255, 0.7);
+      border-radius: 6px;
     }
 
     header {
@@ -144,7 +155,10 @@
       border-radius: 7px;
       font-weight: bold;
       text-decoration: none;
-      transition: transform 0.2s, background 0.2s;
+      transition:
+        transform 0.2s,
+        background 0.2s,
+        color 0.2s;
     }
 
     .boton:hover {
@@ -156,9 +170,18 @@
       background: var(--blanco);
     }
 
+    .principal:hover {
+      background: #eaf4fb;
+    }
+
     .secundario {
       color: var(--blanco);
       border: 1px solid var(--blanco);
+    }
+
+    .secundario:hover {
+      color: var(--azul-oscuro);
+      background: var(--blanco);
     }
 
     main {
@@ -168,6 +191,7 @@
 
     section {
       padding: 75px 28px;
+      scroll-margin-top: 70px;
     }
 
     section h2 {
@@ -201,7 +225,9 @@
       border: 1px solid var(--borde);
       border-radius: 12px;
       box-shadow: 0 8px 22px rgba(16, 42, 67, 0.06);
-      transition: transform 0.2s, box-shadow 0.2s;
+      transition:
+        transform 0.2s,
+        box-shadow 0.2s;
     }
 
     .tarjeta:hover {
@@ -357,6 +383,14 @@
       <a href="#especialidades">Especialidades</a>
       <a href="#proyectos">Proyectos</a>
       <a href="#contacto">Contacto</a>
+
+      <a
+        class="enlace-cv"
+        href="CV-Rodrigo-de-la-Sotta.pdf"
+        target="_blank"
+        rel="noopener noreferrer">
+        CV
+      </a>
     </div>
   </nav>
 
@@ -385,6 +419,7 @@
       </p>
 
       <div class="botones">
+
         <a class="boton principal" href="#proyectos">
           Ver proyectos
         </a>
@@ -392,6 +427,14 @@
         <a class="boton secundario" href="#contacto">
           Contactar
         </a>
+
+        <a
+          class="boton secundario"
+          href="CV-Rodrigo-de-la-Sotta.pdf"
+          download>
+          Descargar CV
+        </a>
+
       </div>
     </div>
   </header>
@@ -489,8 +532,12 @@
       <div class="grid">
 
         <article class="tarjeta proyecto">
-          <span class="tipo">Consultoría curricular de postgrado</span>
+          <span class="tipo">
+            Consultoría curricular de postgrado
+          </span>
+
           <h3>Fortalecimiento de programas de magíster</h3>
+
           <p>
             Revisión y ajuste de lineamientos institucionales, manuales
             operativos y programas de magíster, incorporando coherencia
@@ -500,8 +547,12 @@
         </article>
 
         <article class="tarjeta proyecto">
-          <span class="tipo">Liderazgo curricular</span>
+          <span class="tipo">
+            Liderazgo curricular
+          </span>
+
           <h3>Formación para industria y minería 4.0</h3>
+
           <p>
             Dirección y fortalecimiento de procesos curriculares asociados a
             programas de entrenamiento técnico, articulando necesidades
@@ -511,8 +562,12 @@
         </article>
 
         <article class="tarjeta proyecto">
-          <span class="tipo">Evaluación y seguimiento</span>
+          <span class="tipo">
+            Evaluación y seguimiento
+          </span>
+
           <h3>Sistemas de gestión curricular</h3>
+
           <p>
             Diseño de matrices, instrumentos de seguimiento, listas de
             verificación, flujos de proceso, indicadores y mecanismos para
@@ -521,8 +576,12 @@
         </article>
 
         <article class="tarjeta proyecto">
-          <span class="tipo">Innovación y formación docente</span>
+          <span class="tipo">
+            Innovación y formación docente
+          </span>
+
           <h3>Desarrollo de capacidades académicas</h3>
+
           <p>
             Diseño e implementación de talleres, acompañamiento técnico y
             recursos orientados a fortalecer prácticas docentes, evaluación
@@ -531,8 +590,12 @@
         </article>
 
         <article class="tarjeta proyecto">
-          <span class="tipo">Diseño instruccional</span>
+          <span class="tipo">
+            Diseño instruccional
+          </span>
+
           <h3>Programas y recursos para aprendizaje digital</h3>
+
           <p>
             Co-construcción con especialistas, organización de contenidos y
             desarrollo de actividades, evaluaciones y recursos para programas
@@ -541,8 +604,12 @@
         </article>
 
         <article class="tarjeta proyecto">
-          <span class="tipo">Inteligencia artificial</span>
+          <span class="tipo">
+            Inteligencia artificial
+          </span>
+
           <h3>IA generativa aplicada a educación y productividad</h3>
+
           <p>
             Desarrollo de orientaciones, talleres y casos prácticos sobre uso
             responsable de IA generativa, prompting, productividad, diseño
@@ -553,7 +620,7 @@
       </div>
     </section>
 
-    <section>
+    <section id="competencias">
       <h2>Competencias clave</h2>
       <div class="linea"></div>
 
@@ -599,6 +666,13 @@
         target="_blank"
         rel="noopener noreferrer">
         Ver LinkedIn
+      </a>
+
+      <a
+        class="boton secundario"
+        href="CV-Rodrigo-de-la-Sotta.pdf"
+        download>
+        Descargar CV
       </a>
 
     </div>
