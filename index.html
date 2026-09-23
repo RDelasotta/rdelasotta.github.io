@@ -2,7 +2,11 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  >
 
   <title>Rodrigo de la Sotta | Consultor curricular senior</title>
 
@@ -32,6 +36,7 @@
 
     html {
       scroll-behavior: smooth;
+      scroll-padding-top: 80px;
     }
 
     body {
@@ -56,22 +61,22 @@
       margin: 0 auto;
     }
 
-    /* Navegación */
+    /* NAVEGACIÓN */
 
     header {
       position: sticky;
       top: 0;
       z-index: 1000;
-      background: var(--azul-oscuro);
       color: var(--blanco);
+      background: var(--azul-oscuro);
       box-shadow: 0 2px 10px rgba(0, 0, 0, 0.12);
     }
 
     .navegacion {
-      min-height: 66px;
       display: flex;
-      justify-content: space-between;
+      min-height: 66px;
       align-items: center;
+      justify-content: space-between;
       gap: 30px;
     }
 
@@ -99,14 +104,15 @@
     }
 
     .menu .enlace-cv {
+      padding: 9px 16px;
       border: 1px solid rgba(255, 255, 255, 0.7);
       border-radius: 9px;
-      padding: 9px 16px;
     }
 
-    /* Presentación */
+    /* PRESENTACIÓN PRINCIPAL */
 
     .hero {
+      padding: 105px 0 90px;
       color: var(--blanco);
       background: linear-gradient(
         120deg,
@@ -114,7 +120,6 @@
         #1768a5 60%,
         #168d86 100%
       );
-      padding: 105px 0 90px;
     }
 
     .hero-grid {
@@ -135,25 +140,25 @@
     }
 
     h1 {
+      margin-bottom: 18px;
       font-size: clamp(3rem, 6vw, 5.2rem);
       line-height: 1.04;
       letter-spacing: -2px;
-      margin-bottom: 18px;
     }
 
     .subtitulo {
       max-width: 920px;
+      margin-bottom: 28px;
+      color: #edf7fb;
       font-size: clamp(1.35rem, 2.3vw, 2rem);
       line-height: 1.45;
-      color: #edf7fb;
-      margin-bottom: 28px;
     }
 
     .resumen-hero {
       max-width: 900px;
+      margin-bottom: 32px;
       font-size: 1.12rem;
       line-height: 1.75;
-      margin-bottom: 32px;
     }
 
     .acciones {
@@ -164,9 +169,9 @@
 
     .boton {
       display: inline-flex;
-      justify-content: center;
-      align-items: center;
       min-height: 52px;
+      align-items: center;
+      justify-content: center;
       padding: 12px 25px;
       border: 1px solid var(--blanco);
       border-radius: 9px;
@@ -203,7 +208,7 @@
       box-shadow: 0 20px 45px rgba(0, 0, 0, 0.22);
     }
 
-    /* Secciones */
+    /* SECCIONES GENERALES */
 
     section {
       padding: 82px 0;
@@ -229,10 +234,10 @@
     }
 
     h2 {
+      margin-bottom: 16px;
       color: var(--azul-oscuro);
       font-size: clamp(2rem, 4vw, 3rem);
       line-height: 1.2;
-      margin-bottom: 16px;
     }
 
     .encabezado-seccion p {
@@ -240,11 +245,13 @@
       font-size: 1.1rem;
     }
 
+    /* PERFIL */
+
     .perfil-grid {
       display: grid;
       grid-template-columns: 1.4fr 0.8fr;
-      gap: 60px;
       align-items: start;
+      gap: 60px;
     }
 
     .perfil-texto p {
@@ -266,12 +273,12 @@
 
     .dato strong {
       display: block;
+      margin-bottom: 5px;
       color: var(--azul-oscuro);
       font-size: 1.15rem;
-      margin-bottom: 5px;
     }
 
-    /* Tarjetas */
+    /* TARJETAS */
 
     .grilla {
       display: grid;
@@ -289,23 +296,22 @@
     }
 
     .tarjeta h3 {
+      margin-bottom: 12px;
       color: var(--azul-oscuro);
       font-size: 1.2rem;
       line-height: 1.35;
-      margin-bottom: 12px;
     }
 
     .tarjeta p {
       color: var(--texto-secundario);
-      text-align: left;
     }
 
     .numero {
       display: flex;
       width: 43px;
       height: 43px;
-      justify-content: center;
       align-items: center;
+      justify-content: center;
       margin-bottom: 19px;
       border-radius: 50%;
       color: var(--blanco);
@@ -313,7 +319,7 @@
       font-weight: 700;
     }
 
-    /* Proyectos */
+    /* PROYECTOS */
 
     .proyecto {
       position: relative;
@@ -321,10 +327,10 @@
     }
 
     .proyecto::before {
-      content: "";
       position: absolute;
       inset: 0 auto 0 0;
       width: 5px;
+      content: "";
       background: linear-gradient(var(--azul), var(--turquesa));
     }
 
@@ -338,7 +344,7 @@
       text-transform: uppercase;
     }
 
-    /* Competencias */
+    /* COMPETENCIAS */
 
     .competencias {
       display: flex;
@@ -355,7 +361,7 @@
       font-weight: 600;
     }
 
-    /* Contacto */
+    /* CONTACTO */
 
     .contacto {
       color: var(--blanco);
@@ -398,8 +404,8 @@
     }
 
     .contacto-tarjeta strong {
-      font-size: 1.15rem;
       margin-bottom: 8px;
+      font-size: 1.15rem;
     }
 
     .contacto-tarjeta span {
@@ -415,7 +421,7 @@
       font-size: 0.92rem;
     }
 
-    /* Adaptación para dispositivos móviles */
+    /* DISEÑO RESPONSIVO */
 
     @media (max-width: 950px) {
       .hero-grid {
@@ -443,15 +449,15 @@
       }
 
       .navegacion {
-        align-items: flex-start;
         flex-direction: column;
+        align-items: flex-start;
         padding: 16px 0;
       }
 
       .menu {
         width: 100%;
-        gap: 15px;
         flex-wrap: wrap;
+        gap: 15px;
       }
 
       .hero {
@@ -487,14 +493,29 @@
 
   <header>
     <div class="contenedor navegacion">
-      <a class="marca" href="#inicio">Rodrigo de la Sotta</a>
+
+      <a class="marca" href="#inicio">
+        Rodrigo de la Sotta
+      </a>
 
       <nav aria-label="Navegación principal">
         <ul class="menu">
-          <li><a href="#perfil">Perfil</a></li>
-          <li><a href="#especialidades">Especialidades</a></li>
-          <li><a href="#proyectos">Proyectos</a></li>
-          <li><a href="#contacto">Contacto</a></li>
+          <li>
+            <a href="#perfil">Perfil</a>
+          </li>
+
+          <li>
+            <a href="#especialidades">Especialidades</a>
+          </li>
+
+          <li>
+            <a href="#proyectos">Proyectos</a>
+          </li>
+
+          <li>
+            <a href="#contacto">Contacto</a>
+          </li>
+
           <li>
             <a
               class="enlace-cv"
@@ -507,6 +528,7 @@
           </li>
         </ul>
       </nav>
+
     </div>
   </header>
 
@@ -516,7 +538,9 @@
       <div class="contenedor hero-grid">
 
         <div>
-          <span class="etiqueta">Portafolio profesional</span>
+          <span class="etiqueta">
+            Portafolio profesional
+          </span>
 
           <h1>Rodrigo de la Sotta</h1>
 
@@ -526,18 +550,25 @@
           </p>
 
           <p class="resumen-hero">
-            <strong>Más de 18 años de experiencia</strong> en educación superior,
-            formación técnico-profesional, capacitación laboral y desarrollo de
-            soluciones formativas para universidades, institutos profesionales,
-            centros de formación técnica, OTEC y organizaciones.
+            <strong>Más de 18 años de experiencia</strong> en educación
+            superior, formación técnico-profesional, capacitación laboral y
+            desarrollo de soluciones formativas para universidades, institutos
+            profesionales, centros de formación técnica, OTEC y organizaciones.
           </p>
 
           <div class="acciones">
-            <a class="boton boton-principal" href="#proyectos">
+
+            <a
+              class="boton boton-principal"
+              href="#proyectos"
+            >
               Ver proyectos
             </a>
 
-            <a class="boton boton-secundario" href="#contacto">
+            <a
+              class="boton boton-secundario"
+              href="#contacto"
+            >
               Contactar
             </a>
 
@@ -549,6 +580,7 @@
             >
               Descargar CV
             </a>
+
           </div>
         </div>
 
@@ -568,12 +600,16 @@
 
         <div class="encabezado-seccion">
           <span>Perfil profesional</span>
-          <h2>Experiencia al servicio de la calidad y la innovación educativa</h2>
+
+          <h2>
+            Experiencia al servicio de la calidad y la innovación educativa
+          </h2>
         </div>
 
         <div class="perfil-grid">
 
           <div class="perfil-texto">
+
             <p>
               Consultor curricular senior, diseñador instruccional y relator,
               con experiencia en diseño, actualización, implementación y
@@ -596,26 +632,36 @@
               generativa aplicada responsablemente a la educación y la
               productividad.
             </p>
+
           </div>
 
           <div class="datos-destacados">
+
             <div class="dato">
               <strong>18+ años</strong>
-              <span>de experiencia profesional en educación y formación.</span>
+              <span>
+                de experiencia profesional en educación y formación.
+              </span>
             </div>
 
             <div class="dato">
               <strong>Experiencia multisectorial</strong>
-              <span>Universidades, IP, CFT, OTEC y organizaciones.</span>
+              <span>
+                Universidades, institutos profesionales, CFT, OTEC y
+                organizaciones.
+              </span>
             </div>
 
             <div class="dato">
               <strong>Modalidades flexibles</strong>
-              <span>Trabajo presencial, híbrido y remoto.</span>
+              <span>
+                Trabajo presencial, híbrido y remoto.
+              </span>
             </div>
-          </div>
 
+          </div>
         </div>
+
       </div>
     </section>
 
@@ -624,10 +670,14 @@
 
         <div class="encabezado-seccion">
           <span>Especialidades</span>
-          <h2>Ámbitos de experiencia profesional</h2>
+
+          <h2>
+            Ámbitos de experiencia profesional
+          </h2>
+
           <p>
-            Soluciones orientadas a mejorar la pertinencia, coherencia y calidad
-            de los procesos formativos.
+            Soluciones orientadas a mejorar la pertinencia, coherencia y
+            calidad de los procesos formativos.
           </p>
         </div>
 
@@ -635,17 +685,21 @@
 
           <article class="tarjeta">
             <div class="numero">01</div>
+
             <h3>Diseño y gestión curricular</h3>
+
             <p>
-              Diseño, actualización y rediseño de programas, perfiles de egreso,
-              competencias, resultados de aprendizaje, planes de estudio y
-              matrices curriculares.
+              Diseño, actualización y rediseño de programas, perfiles de
+              egreso, competencias, resultados de aprendizaje, planes de
+              estudio y matrices curriculares.
             </p>
           </article>
 
           <article class="tarjeta">
             <div class="numero">02</div>
+
             <h3>Diseño instruccional</h3>
+
             <p>
               Desarrollo de experiencias, recursos, actividades y evaluaciones
               para modalidades presenciales, híbridas y virtuales.
@@ -654,7 +708,9 @@
 
           <article class="tarjeta">
             <div class="numero">03</div>
+
             <h3>Aseguramiento de la calidad</h3>
+
             <p>
               Revisión de coherencia curricular y normativa, elaboración de
               estándares, instrumentos de seguimiento e indicadores de mejora.
@@ -663,16 +719,21 @@
 
           <article class="tarjeta">
             <div class="numero">04</div>
+
             <h3>Aprendizaje y desarrollo</h3>
+
             <p>
               Diseño y coordinación de programas de formación, capacitación,
-              acompañamiento docente y desarrollo de capacidades profesionales.
+              acompañamiento docente y desarrollo de capacidades
+              profesionales.
             </p>
           </article>
 
           <article class="tarjeta">
             <div class="numero">05</div>
+
             <h3>Innovación educativa</h3>
+
             <p>
               Incorporación de metodologías activas, evaluación auténtica,
               tecnologías educativas y Diseño Universal para el Aprendizaje.
@@ -681,10 +742,13 @@
 
           <article class="tarjeta">
             <div class="numero">06</div>
+
             <h3>IA aplicada al aprendizaje</h3>
+
             <p>
               Formación y asesoría sobre inteligencia artificial generativa,
-              prompting, productividad, integridad académica y uso responsable.
+              prompting, productividad, integridad académica y uso
+              responsable.
             </p>
           </article>
 
@@ -697,7 +761,11 @@
 
         <div class="encabezado-seccion">
           <span>Proyectos seleccionados</span>
-          <h2>Experiencias y soluciones desarrolladas</h2>
+
+          <h2>
+            Experiencias y soluciones desarrolladas
+          </h2>
+
           <p>
             Selección de ámbitos de intervención representativos de mi
             trayectoria profesional.
@@ -707,8 +775,14 @@
         <div class="grilla">
 
           <article class="tarjeta proyecto">
-            <span class="categoria">Educación superior</span>
-            <h3>Fortalecimiento curricular de programas de postgrado</h3>
+            <span class="categoria">
+              Educación superior
+            </span>
+
+            <h3>
+              Fortalecimiento curricular de programas de postgrado
+            </h3>
+
             <p>
               Revisión de lineamientos institucionales, manuales operativos,
               perfiles de graduación, resultados de aprendizaje, matrices de
@@ -717,8 +791,14 @@
           </article>
 
           <article class="tarjeta proyecto">
-            <span class="categoria">Industria y minería</span>
-            <h3>Formación para la industria y minería 4.0</h3>
+            <span class="categoria">
+              Industria y minería
+            </span>
+
+            <h3>
+              Formación para la industria y minería 4.0
+            </h3>
+
             <p>
               Dirección y desarrollo curricular de programas de entrenamiento,
               articulando necesidades productivas, competencias laborales y
@@ -727,8 +807,14 @@
           </article>
 
           <article class="tarjeta proyecto">
-            <span class="categoria">Gestión curricular</span>
-            <h3>Sistemas e instrumentos de gestión académica</h3>
+            <span class="categoria">
+              Gestión curricular
+            </span>
+
+            <h3>
+              Sistemas e instrumentos de gestión académica
+            </h3>
+
             <p>
               Desarrollo de matrices, listas de verificación, formularios,
               flujos de proceso e instrumentos para apoyar el diseño y
@@ -737,31 +823,50 @@
           </article>
 
           <article class="tarjeta proyecto">
-            <span class="categoria">Desarrollo docente</span>
-            <h3>Fortalecimiento de capacidades académicas</h3>
+            <span class="categoria">
+              Desarrollo docente
+            </span>
+
+            <h3>
+              Fortalecimiento de capacidades académicas
+            </h3>
+
             <p>
               Diseño e implementación de talleres, asesorías y procesos de
-              acompañamiento para docentes, equipos académicos y profesionales.
+              acompañamiento para docentes, equipos académicos y
+              profesionales.
             </p>
           </article>
 
           <article class="tarjeta proyecto">
-            <span class="categoria">Aprendizaje digital</span>
-            <h3>Programas y recursos para formación online</h3>
+            <span class="categoria">
+              Aprendizaje digital
+            </span>
+
+            <h3>
+              Programas y recursos para formación online
+            </h3>
+
             <p>
               Organización de contenidos, definición de actividades,
-              evaluaciones y recursos para experiencias de aprendizaje virtuales
-              y combinadas.
+              evaluaciones y recursos para experiencias de aprendizaje
+              virtuales y combinadas.
             </p>
           </article>
 
           <article class="tarjeta proyecto">
-            <span class="categoria">Inteligencia artificial</span>
-            <h3>IA generativa para educación y productividad</h3>
+            <span class="categoria">
+              Inteligencia artificial
+            </span>
+
+            <h3>
+              IA generativa para educación y productividad
+            </h3>
+
             <p>
-              Diseño de experiencias formativas sobre IA generativa, prompting,
-              productividad, ética, integridad académica y aplicación
-              responsable en entornos profesionales.
+              Diseño de experiencias formativas sobre IA generativa,
+              prompting, productividad, ética, integridad académica y
+              aplicación responsable en entornos profesionales.
             </p>
           </article>
 
@@ -774,25 +879,67 @@
 
         <div class="encabezado-seccion">
           <span>Competencias</span>
-          <h2>Conocimientos y capacidades clave</h2>
+
+          <h2>
+            Conocimientos y capacidades clave
+          </h2>
         </div>
 
         <div class="competencias">
-          <span class="competencia">Currículum por competencias</span>
-          <span class="competencia">Resultados de aprendizaje</span>
-          <span class="competencia">Diseño instruccional</span>
-          <span class="competencia">Evaluación del aprendizaje</span>
-          <span class="competencia">Aseguramiento de la calidad</span>
-          <span class="competencia">Gestión de proyectos</span>
-          <span class="competencia">Formación docente</span>
-          <span class="competencia">Educación superior</span>
-          <span class="competencia">Learning &amp; Development</span>
-          <span class="competencia">Diseño Universal para el Aprendizaje</span>
-          <span class="competencia">Inteligencia artificial generativa</span>
-          <span class="competencia">Integridad académica</span>
-          <span class="competencia">Mejora continua</span>
-        </div>
 
+          <span class="competencia">
+            Currículum por competencias
+          </span>
+
+          <span class="competencia">
+            Resultados de aprendizaje
+          </span>
+
+          <span class="competencia">
+            Diseño instruccional
+          </span>
+
+          <span class="competencia">
+            Evaluación del aprendizaje
+          </span>
+
+          <span class="competencia">
+            Aseguramiento de la calidad
+          </span>
+
+          <span class="competencia">
+            Gestión de proyectos
+          </span>
+
+          <span class="competencia">
+            Formación docente
+          </span>
+
+          <span class="competencia">
+            Educación superior
+          </span>
+
+          <span class="competencia">
+            Learning &amp; Development
+          </span>
+
+          <span class="competencia">
+            Diseño Universal para el Aprendizaje
+          </span>
+
+          <span class="competencia">
+            Inteligencia artificial generativa
+          </span>
+
+          <span class="competencia">
+            Integridad académica
+          </span>
+
+          <span class="competencia">
+            Mejora continua
+          </span>
+
+        </div>
       </div>
     </section>
 
@@ -801,7 +948,11 @@
 
         <div class="encabezado-seccion">
           <span>Contacto</span>
-          <h2>Conversemos sobre oportunidades y proyectos</h2>
+
+          <h2>
+            Conversemos sobre oportunidades y proyectos
+          </h2>
+
           <p>
             Disponible para consultorías, proyectos curriculares, diseño
             instruccional, formación, innovación educativa e inteligencia
@@ -816,18 +967,24 @@
             href="mailto:rodrigodelasotta@gmail.com"
           >
             <strong>Correo electrónico</strong>
-            <span>rodrigodelasotta@gmail.com</span>
+
+            <span>
+              rodrigodelasotta@gmail.com
+            </span>
           </a>
 
           <a
             class="contacto-tarjeta"
-            href="https://www.linkedin.com/in/rdelasotta/"
+            href="https://www.linkedin.com/in/rodelasotta/"
             target="_blank"
             rel="noopener noreferrer"
             aria-label="Visitar el perfil de LinkedIn de Rodrigo de la Sotta"
           >
             <strong>LinkedIn</strong>
-            <span>Ver perfil profesional</span>
+
+            <span>
+              Ver perfil profesional
+            </span>
           </a>
 
           <a
@@ -837,7 +994,10 @@
             rel="noopener noreferrer"
           >
             <strong>Currículum</strong>
-            <span>Ver o descargar CV en PDF</span>
+
+            <span>
+              Ver o descargar CV en PDF
+            </span>
           </a>
 
         </div>
